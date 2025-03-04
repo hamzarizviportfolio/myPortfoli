@@ -1,0 +1,49 @@
+.tf-quote {
+	@include d-flex();
+	position: relative;
+	padding: 47px 50px 50px;
+	background-color: #FFF4F4;
+
+	.image {
+		@include flex(0 0 70px);
+		max-width: 70px;
+		margin-right: 28px;
+		position: relative;
+
+		img {
+			border-radius: 50%;
+		}
+
+		.image-quote {
+			position: absolute;
+			top: -8px;
+			left: 0;
+		}
+	}
+
+	.content {
+		text-align: left;
+		@include flex(1 1 auto);
+	}
+
+	.title {
+		font-size: 24px;
+		line-height: 30px;
+		font-weight: 700;
+		font-family: var(--theme-font-primary);
+		color: var(--theme-primary-color);
+		margin-bottom: 5px;
+	}
+
+	.description {
+		font-size: 24px;
+		line-height: 30px;
+		font-family: var(--theme-font-primary);
+		font-weight: 500;
+		color: var(--theme-accent-color);
+	}
+
+	@media only screen and (max-width: 575px) {
+		padding-left: 20px;
+	}
+}

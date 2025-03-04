@@ -1,0 +1,54 @@
+@import "../mixin";
+/* Default  */
+.tf-team {
+	overflow: hidden;
+	text-align: center;
+
+	.social {
+		width: 100%;
+
+		> a {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			&:not(:last-child){
+				margin-right: 10px;
+			}
+		}
+	}
+	.title {
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 30px;
+	}
+}
+
+.tf-team .social a,
+.tf-team .content,
+.tf-team .image-team img {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.tf-team .content .title {
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-o-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.tf-team .inner-image,
+.tf-team .image-team img {
+	position: relative;
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 1024px) {
+	.tf-team .image-team img {
+		width: 100%;
+	}
+}

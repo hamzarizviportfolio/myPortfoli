@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'tf-social-icon';
-	src: url('/wp-content/themes/fungi/fonts/tf-social-icon.eot?o7tm4m');
-	src: url('/wp-content/themes/fungi/fonts/tf-social-icon.eot?o7tm4m#iefix') format('embedded-opentype'),
-	url('/wp-content/themes/fungi/fonts/tf-social-icon.ttf?o7tm4m') format('truetype'),
-	url('/wp-content/themes/fungi/fonts/tf-social-icon.woff?o7tm4m') format('woff'),
-	url('/wp-content/themes/fungi/fonts/tf-social-icon.svg?o7tm4m#tf-social-icon') format('svg');
+	src: url('../fonts/tf-social-icon.eot?o7tm4m');
+	src: url('../fonts/tf-social-icon.eot?o7tm4m#iefix') format('embedded-opentype'),
+	url('../fonts/tf-social-icon.ttf?o7tm4m') format('truetype'),
+	url('../fonts/tf-social-icon.woff?o7tm4m') format('woff'),
+	url('../fonts/tf-social-icon.svg?o7tm4m#tf-social-icon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;

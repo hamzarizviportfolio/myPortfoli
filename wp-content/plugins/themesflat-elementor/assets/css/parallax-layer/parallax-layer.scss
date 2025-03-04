@@ -1,0 +1,59 @@
+.tf-parallax-layer {
+    .image-wrapper {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    .layer-type-info {
+        .layer-infor-inner {
+            background: #fff;
+            padding: 18px 24px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 50px rgb(0 0 0 / 20%);
+        }
+
+        .info-featured {
+            font-size: 45px;
+            font-weight: bold;
+            margin-right: 12px;
+            line-height: 1.5;
+        }
+
+        .info-title {
+            margin-top: 3px;
+            top: 3px;
+            font-size: 18px;
+            text-transform: uppercase;
+            line-height: 1.4;
+            font-family: var(--theme-font-primary);
+        }
+    }
+
+    .layer-shape-inner {
+        -webkit-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s;
+        content: '';
+        width: 612px;
+        height: 328px;
+        background: #fff;
+        border-radius: 10px;
+    }
+
+    .layer-icon-inner {
+        -webkit-transition: 0.4s;
+        -o-transition: 0.4s;
+        transition: 0.4s;
+        --tf-box-icon-size: 116px;
+        border-radius: 10px;
+        width: var(--tf-box-icon-size);
+        height: var(--tf-box-icon-size);
+        font-size: 60px;
+        box-shadow: 10px 10px 50px rgb(0 0 0 / 20%);
+
+        i {
+            line-height: var(--tf-box-icon-size);
+        }
+    }
+}

@@ -1,0 +1,130 @@
+.tf-pricetable {
+	background: #FFFFFF;
+	border: 1px solid rgba(24, 24, 24, 0.07);
+	border-radius: 5px;
+	position: relative;
+
+	.label {
+		font-weight: 600;
+		font-size: 13px;
+		line-height: 16px;
+		color: #FFFFFF;
+		padding: 7px 18px;
+		background-color: #E3A573;
+		border-radius: 5px;
+		display: inline-block;
+		position: absolute;
+		top: -15px;
+		right: 30px;
+	}
+
+	.header-price {
+		text-align: left;
+		padding: 37px 50px 27px;
+		background-color: #FFF4F4;
+		transition: all 0.3s ease;
+		overflow: hidden;
+		border-top-right-radius: inherit;
+		border-top-left-radius: inherit;
+	}
+
+	.title {
+		font-size: 24px;
+		line-height: 29px;
+		font-weight: 700;
+		font-family: var(--theme-font-primary);
+		margin-bottom: 10px;
+		color: var(--theme-accent-color);
+		transition: all 0.3s ease;
+	}
+
+	.price-wrap {
+		font-size: 16px;
+		line-height: 19px;
+		font-weight: 500;
+		font-family: var(--theme-font-body);
+		color: var(--theme-primary-color);
+		display: inline-block;
+		transition: all 0.3s ease;
+
+		.price {
+			font-size: 24px;
+			line-height: 29px;
+			display: inline-block;
+		}
+
+		.suffix {
+			display: inline-block;
+		}
+
+	}
+
+	.content-wrapper {
+		padding: 18px 48px 30px;
+		overflow: hidden;
+		border-bottom-right-radius: inherit;
+		border-bottom-left-radius: inherit;
+	}
+
+	.content-list {
+		.item {
+			.wrap-icon {
+				display: inline-block;
+				margin-right: 1px;
+				font-size: 14px;
+			}
+
+			.text {
+				font-size: 14px;
+				font-family: var(--theme-font-body);
+				color: #3D3D3D;
+			}
+
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	.wrap-button {
+		margin-top: 20px;
+		text-align: center;
+
+		a {
+			line-height: 42px;
+			font-size: 14px;
+			padding: 0 21px;
+			@include d-inline-flex();
+			@include align-items-center();
+			@include justify-content-center();
+
+			.icon {
+				font-size: 16px;
+				line-height: 16px;
+				margin-left: 5px;
+
+			}
+
+			&:hover {
+				background-color: var(--theme-primary-color);
+
+			}
+		}
+	}
+
+	&:hover {
+		.header-price {
+			background-color: var(--theme-primary-color);
+		}
+
+		.title, .price-wrap {
+			color: #fff;
+		}
+
+		.wrap-button a {
+			background-color: var(--theme-primary-color);
+			border-color: var(--theme-primary-color);
+		}
+
+	}
+}

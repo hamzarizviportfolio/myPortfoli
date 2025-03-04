@@ -1,0 +1,32 @@
+.tf-parallax-layer {
+    .layer-infor-inner {
+        .info-featured {
+            color: var(--theme-primary-color);
+            text-transform: uppercase;
+
+            sub {
+                bottom: unset;
+                font-size: 60%;
+                top: -15px;
+                line-height: 1;
+            }
+        }
+
+        .info-title {
+            color: var(--theme-accent-color);
+            font-weight: 700;
+        }
+    }
+
+    .layer-type-shape .layer-shape-inner {
+        background: var(--theme-primary-color);
+    }
+
+    .layer-icon-inner {
+        background-color: var(--theme-primary-color);
+        color: var(--theme-primary-foreground-color);
+        @include d-flex();
+        @include justify-content-center();
+        @include align-content-center();
+    }
+}

@@ -1,0 +1,249 @@
+@import "elementor/elementor";
+
+body.elementor-page #themesflat-content > .container {
+    max-width: 1325px;
+}
+
+.elementor-section.elementor-section.elementor-section-boxed > .elementor-container {
+    max-width: 1325px;
+}
+
+.image-100 img {
+    width: 100%;
+}
+
+.col-full-left, .col-full-right {
+    .elementor-widget-wrap.elementor-element-populated:before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 50vw;
+        background: inherit;
+        top: 0;
+        z-index: 0;
+    }
+}
+
+.col-full-left {
+    .elementor-widget-wrap.elementor-element-populated:before {
+        right: 0;
+    }
+}
+
+.col-full-right {
+    .elementor-widget-wrap.elementor-element-populated:before {
+        left: 0;
+    }
+}
+
+.col-hover-border-secondary .elementor-element-populated:hover {
+    border-color: var(--theme-secondary-color) !important;
+}
+
+.col-hover-border-secondary .elementor-element-populated:after {
+    content: "";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    right: 0;
+    bottom: -0.5px;
+    background-color: var(--theme-secondary-color) !important;
+    transform: scale(0, 1);
+    transform-origin: center center;
+    transition: transform 500ms ease;
+}
+
+
+.col-hover-border-secondary .elementor-element-populated:hover:after {
+    transform: scale(1, 1);
+    transform-origin: center center;
+}
+
+.order-1 {
+    --order: 1 !important;
+}
+
+.order-2 {
+    --order: 2 !important;
+}
+
+.order-3 {
+    --order: 3 !important;
+}
+
+.order-4 {
+    --order: 4 !important;
+}
+
+@media only screen and (min-width: 768px) {
+    .position-md-absolute {
+        position: absolute !important;
+    }
+    
+    .order-md-1 {
+        --order: 1 !important;
+    }
+    
+    .order-md-2 {
+        --order: 2 !important;
+    }
+    
+    .order-md-3 {
+        --order: 3 !important;
+    }
+    
+    .order-md-4 {
+        --order: 4 !important;
+    }
+    
+}
+
+@media only screen and (min-width: 1025px) {
+    .el-order-lg-1 {
+        -webkit-box-ordinal-group: 2 !important;;
+        -ms-flex-order: 1 !important;;
+        order: 1 !important;;
+        --order: 1 !important;
+    }
+    .el-order-lg-2 {
+        -webkit-box-ordinal-group: 3 !important;;
+        -ms-flex-order: 2 !important;;
+        order: 2 !important;;
+        --order: 2 !important;
+    }
+    
+    .el-order-lg-3 {
+        -webkit-box-ordinal-group: 4 !important;;
+        -ms-flex-order: 3 !important;;
+        order: 3 !important;;
+        --order: 3 !important;
+    }
+    
+    .el-order-lg-4 {
+        -webkit-box-ordinal-group: 5 !important;
+        -ms-flex-order: 4 !important;;
+        order: 4 !important;;
+        --order: 4 !important;
+    }
+    
+    .services-full-right {
+        position: absolute !important;
+        width: calc(100vw - ((100vw - 1220px) / 2)) !important;
+        left: 0;
+        top: 0;
+        
+        .themesflat__entry-thumbnail {
+            max-height: 436px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+
+}
+
+
+@keyframes anim-rotate {
+    0% {
+      transform: rotate(-30deg);
+    }
+    50% {
+      transform: rotate(-45deg);
+    }
+    100% {
+      transform: rotate(-30deg);
+    }
+}
+@keyframes anim-updown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(30px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}
+.elem-updown {
+    animation: anim-updown 5s infinite;
+}
+@keyframes anim-move {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(30px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+.elem-move {
+    animation: anim-move 5s infinite;
+}
+@keyframes anim-rotate-full {
+0% {
+    transform: rotate(0deg);
+}
+50% {
+    transform: rotate(360deg);
+}
+100% {
+    transform: rotate(0deg);
+}
+}
+.elem-rotate-full {
+animation: anim-rotate-full 12s infinite;
+}
+@keyframes anim-zoom {
+0% {
+    transform: scale(0.2);
+}
+50% {
+    transform: scale(0.7);
+}
+100% {
+    transform: scale(0.2);
+}
+}
+.elem-zoom {
+animation: anim-zoom 5s infinite;
+}
+@keyframes anim-fade {
+0% {
+    opacity: 0.1;
+}
+50% {
+    opacity: 0.5;
+}
+100% {
+    opacity: 0.1;
+}
+}
+.elem-fade {
+    animation: anim-fade 5s infinite;
+}
+
+
+.de-hero-2 {
+    animation-delay: 300ms;
+}
+
+.de-hero-4 {
+    animation-duration: 3s;
+    animation-delay: 200ms;
+}
+.de-hero-5 {
+    width: 18px;
+}
+.de-hero-6 {
+    animation-duration: 3s;
+    animation-delay: 200ms;
+}
+.de-hero-7 {
+    animation-delay: 500ms;
+}
+.de-hero-8 {
+    animation-delay: 500ms;
+}

@@ -1,0 +1,41 @@
+.bottom.footer-default {
+	background-color: var(--theme-accent-color);
+	color: var(--theme-secondary-foreground-color);
+	padding: 30px 0;
+	text-align: center;
+}
+
+.footer-instagram {
+	.zoom-instagram-widget__items {
+		@include d-flex();
+		@include flex-wrap();
+		margin: -5px;
+
+		.zoom-instagram-widget__item {
+			padding: 5px !important;
+			margin: 0 !important;
+			width: 50%;
+
+			a.zoom-instagram-link {
+				width: 100% !important;
+				height: 100px !important;
+			}
+		}
+	}
+
+	.widget {
+		margin-bottom: 0;
+	}
+}
+
+@media only screen and (min-width: 1025px) {
+	.footer-instagram {
+		width: 25% !important;
+	}
+}
+
+.tf-footer {
+	strong {
+		color: inherit;
+	}
+}

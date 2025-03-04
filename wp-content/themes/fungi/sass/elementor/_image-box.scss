@@ -1,0 +1,29 @@
+.tfimagebox {
+	.title {
+		font-size: 16px;
+		text-transform: uppercase;
+		font-weight: bold;
+		margin-bottom: 10px;
+	}
+
+	.wrap-image:not(.default) {
+		.wrap-image-inner{
+			@include d-inline-flex();
+			@include align-items-center();
+			@include justify-content-center();
+		}
+
+	}
+
+	&.left {
+		@include d-flex(important);
+
+		.wrap-image {
+			margin-right: 25px;
+		}
+	}
+}
+.tfimagebox .wrap-image.circle .wrap-image-inner,
+.tfimagebox .wrap-image.square .wrap-image-inner {
+	background-color: #FDF0F0;
+}

@@ -1,0 +1,35 @@
+.tf-animation-layer {
+    .tf-animation-layer-inner {
+        background: var(--theme-accent-color);
+    }
+
+}
+.hero-parallax {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    .img-fluid {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.test-animation .tf-fancy-text .text {
+    &.text1  {
+        color:#80B341 !important;
+    }
+    &.text2 {
+        color:#1FBD06 !important;
+    }
+    &.text3 {
+        color: #29B2FE !important;
+    }
+    &.text4 {
+        color: #00B22D !important;
+    }
+}

@@ -1,0 +1,121 @@
+//header-customize
+.header .header-customize {
+    @include d-flex();
+    @include align-items-center();
+    margin-left: 50px;
+    
+    .header-customize-item + .header-customize-item {
+        margin-left: 25px;
+    }
+    
+    .phone-info {
+        @include d-flex();
+        @include align-items-center();
+        @include flex-row();
+        
+        .icon {
+            width: 40px;
+            height: 40px;
+            font-size: 18px;
+            border-radius: 50%;
+            background-color: #FDF0F0;
+            color: var(--theme-primary-color);
+            @include d-flex();
+            @include align-items-center();
+            @include justify-content-center();
+        }
+        
+        .phone-info-content {
+            padding-left: 8px;
+            font-weight: 600;
+            font-size: 16px;
+            color: var(--theme-accent-color);
+        }
+    }
+    
+    .phone-info + .header-customize-item {
+        margin-left: 115px;
+    }
+    
+    .header-custom-html .demo-language {
+        .btn, .label {
+            color: var(--theme-accent-color);
+            font-size: 14px;
+            line-height: 22px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        
+        .label {
+            padding-right: 10px;
+        }
+        
+        .btn {
+            padding: 0;
+            background: transparent;
+            border: none;
+            
+            &:hover {
+                color: var(--theme-primary-color);
+            }
+            
+            &:after,
+            &:before {
+                display: none;
+                
+            }
+        }
+    }
+}
+
+
+.header-customize-item {
+    .icon-show-search {
+        font-size: 18px;
+        width: 30px;
+        display: block;
+        text-align: center;
+        
+        i {
+            font-weight: 600;
+        }
+    }
+}
+
+.top-search.widget_search {
+    &.show {
+        visibility: visible;
+        opacity: 1;
+        z-index: 1;
+        top: 100%;
+    }
+    
+    background: #fff;
+    padding: 30px 15px;
+    line-height: normal;
+    position: absolute;
+    right: 0;
+    top: 120%;
+    width: 300px;
+    opacity: 0;
+    visibility: hidden;
+    @include transition(all 0.3s ease-in-out);
+    box-shadow: 6px 6px 6px rgb(0 0 0 / 6%);
+    
+    .input-group {
+        border: 1px solid var(--theme-accent-color);
+        color: var(--theme-accent-color);
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    
+    input[type="search"] {
+        color: inherit !important;
+        padding-right: 60px;
+    }
+    
+    .search-submit {
+        width: 50px;
+        color: inherit !important;
+    }
+}

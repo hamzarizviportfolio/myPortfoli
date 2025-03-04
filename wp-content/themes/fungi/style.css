@@ -6083,7 +6083,7 @@ body.elementor-page #themesflat-content > .container {
 }
 
 .infscr-loading {
-  background: url("/wp-content/themes/fungi/images/loading.gif") no-repeat scroll center 15px;
+  background: url("images/loading.gif") no-repeat scroll center 15px;
   top: 50%;
   transform: translateY(-50%);
   color: #ccc;
