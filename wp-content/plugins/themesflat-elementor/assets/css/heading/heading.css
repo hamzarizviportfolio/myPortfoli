@@ -1,0 +1,43 @@
+.tf-heading-title p,
+.tf-heading-description p {
+  color: inherit;
+}
+
+.tf-heading-title {
+  margin: 0;
+}
+.tf-heading-title a {
+  color: inherit;
+}
+.tf-heading-title mark {
+  position: relative;
+  background: transparent;
+  color: inherit;
+}
+.tf-heading-title.tf-heading-size-sm {
+  font-size: 15px;
+}
+.tf-heading-title.tf-heading-size-md {
+  font-size: 19px;
+}
+.tf-heading-title.tf-heading-size-lg {
+  font-size: 29px;
+}
+.tf-heading-title.tf-heading-size-xl {
+  font-size: 39px;
+}
+.tf-heading-title.tf-heading-size-xxl {
+  font-size: 59px;
+}
+
+.tf-heading-description p {
+  margin-bottom: 0;
+}
+
+.tf-heading-sub-title {
+  margin-top: 0;
+  margin-bottom: 0.875rem;
+  font-size: 0.875rem;
+}
+
+/*# sourceMappingURL=heading.css.map */
